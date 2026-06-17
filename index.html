@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konverter Gambar ke PDF Instan</title>
+    
+    <title>PicToPDF - Konverter Gambar ke PDF Instan & Gratis</title>
+    <meta name="description" content="Ubah gambar JPG, JPEG, PNG, dan WebP menjadi dokumen PDF secara instan gratis tanpa upload ke server. Aman, cepat, dan menghemat kuota internet Anda.">
+    <meta name="keywords" content="konverter gambar ke pdf, ubah jpg ke pdf, convert png to pdf online, pdf converter gratis, pic2pdf">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" type="image/png" href="favico.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
@@ -23,7 +30,13 @@
         </div>
 
         <div class="file-info" id="fileInfo" style="display: none;">
-            <p id="fileName">Nama_file.jpg</p>
+            <div class="preview-wrapper">
+                <img id="imagePreview" src="" alt="Pratinjau Gambar">
+                <div class="file-details">
+                    <p id="fileName">Nama_file.jpg</p>
+                    <button id="clearBtn" class="btn-clear">Hapus File ✕</button>
+                </div>
+            </div>
         </div>
 
         <div class="action-section">
@@ -31,7 +44,6 @@
             <a id="downloadBtn" class="btn-success" style="display: none;">Unduh PDF Anda</a>
         </div>
 
-        <!-- ARTIKEL SEO UNTUK GOOGLE ADSENSE -->
         <article class="seo-article">
             <h2>Panduan Lengkap Mengubah Gambar ke PDF Secara Online, Cepat, dan Gratis</h2>
             <p>Di era digital saat ini, kebutuhan untuk mengubah format file gambar seperti JPG, JPEG, atau PNG menjadi dokumen PDF semakin meningkat. Baik untuk keperluan mengunggah berkas lamaran kerja, mengumpulkan tugas sekolah atau kuliah, hingga memenuhi syarat administrasi pendaftaran CPNS, format PDF sering kali menjadi standar wajib karena ukurannya yang stabil dan tampilannya yang tidak berubah saat dibuka di perangkat apa pun.</p>
@@ -64,7 +76,6 @@
             </div>
         </article>
 
-        <!-- MENU NAVIGASI FOOTER (Link ke Halaman Legalitas) -->
         <div class="footer-links">
             <a href="privacy-policy.html">Privacy Policy</a> | 
             <a href="about.html">About & Contact Us</a>
