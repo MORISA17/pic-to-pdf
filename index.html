@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Gambar ke PDF Instan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <div class="converter-container">
+        <header class="converter-header">
+            <h1>PicToPDF</h1>
+            <p>Ubah gambar Anda menjadi dokumen PDF secara instan, aman, dan 100% gratis.</p>
+        </header>
+
+        <div class="drop-zone" id="dropZone">
+            <div class="drop-zone-icon">📁</div>
+            <p class="drop-zone-text">Seret & letakkan gambar di sini atau <span>Pilih File</span></p>
+            <input type="file" id="fileInput" accept="image/*" multiple hidden>
+        </div>
+
+        <div class="file-info" id="fileInfo" style="display: none;">
+            <p id="fileName">Nama_file.jpg</p>
+        </div>
+
+        <div class="action-section">
+            <button id="convertBtn" class="btn-primary" disabled>Konversi ke PDF</button>
+            <a id="downloadBtn" class="btn-success" style="display: none;">Unduh PDF Anda</a>
+        </div>
+
+        <!-- ARTIKEL SEO UNTUK GOOGLE ADSENSE -->
+        <article class="seo-article">
+            <h2>Panduan Lengkap Mengubah Gambar ke PDF Secara Online, Cepat, dan Gratis</h2>
+            <p>Di era digital saat ini, kebutuhan untuk mengubah format file gambar seperti JPG, JPEG, atau PNG menjadi dokumen PDF semakin meningkat. Baik untuk keperluan mengunggah berkas lamaran kerja, mengumpulkan tugas sekolah atau kuliah, hingga memenuhi syarat administrasi pendaftaran CPNS, format PDF sering kali menjadi standar wajib karena ukurannya yang stabil dan tampilannya yang tidak berubah saat dibuka di perangkat apa pun.</p>
+
+            <h3>Mengapa Memilih PicToPDF untuk Konversi Gambar Anda?</h3>
+            <p>Aplikasi web <strong>PicToPDF</strong> dirancang khusus untuk memberikan solusi konversi yang tidak hanya cepat, tetapi juga aman. Berikut adalah beberapa keunggulan utama menggunakan alat konverter kami:</p>
+            <ul>
+                <li><strong>Keamanan & Privasi Terjamin:</strong> Berbeda dengan konverter online lainnya yang mengunggah file Anda ke server internet, PicToPDF memproses 100% konversi langsung di dalam browser perangkat Anda. Gambar Anda tidak pernah meninggalkan komputer atau HP Anda, sehingga privasi Anda aman dari kebocoran data.</li>
+                <li><strong>Tanpa Batasan & 100% Gratis:</strong> Anda bisa menggunakan alat ini kapan saja tanpa perlu membayar biaya langganan, tanpa registrasi, dan tanpa batasan jumlah file.</li>
+                <li><strong>Sangat Cepat:</strong> Karena tidak ada proses <i>upload</i> dan <i>download</i> dari server luar, file PDF langsung terbentuk dalam hitungan detik setelah Anda menekan tombol konversi.</li>
+                <li><strong>Hemat Kuota Internet:</strong> Karena pemrosesan terjadi secara lokal di browser, kuota internet Anda tidak akan terkuras untuk mengunggah file gambar yang berukuran besar.</li>
+            </ul>
+
+            <h3>Cara Mengubah Gambar (JPG/PNG) Menjadi PDF dengan Mudah</h3>
+            <p>Menggunakan alat ini sangatlah sederhana, bahkan bagi Anda yang baru pertama kali mencobanya. Ikuti 3 langkah mudah berikut:</p>
+            <ol>
+                <li><strong>Pilih atau Seret Gambar:</strong> Klik pada area kotak unggah di atas untuk memilih gambar dari galeri perangkat Anda, atau cukup seret (drag & drop) file gambar langsung ke dalam kotak tersebut.</li>
+                <li><strong>Klik Tombol Konversi:</strong> Setelah nama file Anda muncul di layar, tombol "Konversi ke PDF" akan aktif. Klik tombol tersebut untuk memulai proses penggabungan berkas.</li>
+                <li><strong>Unduh File PDF:</strong> Dalam sekejap, tombol hijau "Unduh PDF Anda" akan muncul. Klik tombol tersebut untuk menyimpan file PDF hasil konversi ke dalam penyimpanan perangkat Anda.</li>
+            </ol>
+
+            <h3>Pertanyaan yang Sering Diajukan (FAQ)</h3>
+            <div class="faq-item">
+                <h4>Apakah ada batasan ukuran file gambar yang diunggah?</h4>
+                <p>Secara teknis tidak ada batasan ukuran dari sistem kami karena pemrosesan memanfaatkan performa perangkat Anda sendiri. Namun, pastikan browser Anda memiliki memori yang cukup jika mengonversi gambar beresolusi sangat tinggi.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Format gambar apa saja yang didukung?</h4>
+                <p>Alat ini mendukung hampir semua format gambar standar yang umum digunakan, termasuk JPG, JPEG, PNG, WebP, dan BMP.</p>
+            </div>
+        </article>
+
+        <!-- MENU NAVIGASI FOOTER (Link ke Halaman Legalitas) -->
+        <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a> | 
+            <a href="about.html">About & Contact Us</a>
+        </div>
+        
+        <footer class="converter-footer">
+            <p>Proses cepat langsung di browser Anda. Privasi file terjamin aman.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
