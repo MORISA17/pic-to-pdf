@@ -72,25 +72,70 @@ body {
     text-decoration: underline;
 }
 
-/* Gaya Informasi File */
+/* ==========================================
+   FITUR BARU: GAYA INFORMASI FILE & PRATINJAU 
+   ========================================== */
 .file-info {
     margin-top: 20px;
-    padding: 12px;
+    padding: 15px;
     background-color: #f3f4f6;
     border-radius: 8px;
     border-left: 4px solid #6366f1;
-    text-align: left;
 }
 
-.file-info p {
+.preview-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#imagePreview {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    background-color: #fff;
+}
+
+.file-details {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.file-details p {
     font-size: 0.85rem;
     color: #374151;
+    font-weight: 500;
+    max-width: 320px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-/* Gaya Tombol */
+/* Gaya Tombol Hapus File (Clear) */
+.btn-clear {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    width: fit-content;
+    transition: color 0.2s ease;
+}
+
+.btn-clear:hover {
+    color: #b91c1c;
+    text-decoration: underline;
+}
+
+/* Gaya Tombol Aksi */
 .action-section {
     margin-top: 30px;
 }
@@ -187,23 +232,24 @@ body {
     margin-bottom: 5px;
 }
 
-/* Gaya Link Footer */
+/* Gaya Link Footer Legalitas */
 .footer-links {
-    margin-top: 20px;
-    font-size: 0.8rem;
+    margin-top: 25px;
+    font-size: 0.85rem;
 }
 
 .footer-links a {
     color: #6366f1;
     text-decoration: none;
     margin: 0 5px;
+    font-weight: 500;
 }
 
 .footer-links a:hover {
     text-decoration: underline;
 }
 
-/* Gaya Footer */
+/* Gaya Footer Bawaan */
 .converter-footer {
     margin-top: 35px;
     border-top: 1px solid #f3f4f6;
