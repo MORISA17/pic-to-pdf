@@ -1,4 +1,6 @@
-/* Reset Dasar & Font */
+/* ==========================================
+   1. RESET DASAR & FONT 
+   ========================================== */
 * {
     margin: 0;
     padding: 0;
@@ -8,25 +10,34 @@
 
 body {
     background-color: #f3f4f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
-/* Wadah Utama Aplikasi */
+/* ==========================================
+   2. STRUKTUR UTAMA LAYOUT (MAIN WRAPPER)
+   ========================================== */
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 500px 1fr; /* Kolom kiri aplikasi (500px), kolom kanan artikel (sisa layar) */
+    gap: 40px;
+    max-width: 1250px;
+    margin: 0 auto;
+    align-items: start; /* Menjaga agar kotak kanan tidak tertarik memanjang secara paksa */
+}
+
+/* ==========================================
+   3. WADAH APLIKASI (KOLOM KIRI)
+   ========================================== */
 .converter-container {
     background: #ffffff;
     padding: 40px 30px;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
     width: 100%;
-    max-width: 550px;
     text-align: center;
 }
 
-/* Gaya Header */
 .converter-header h1 {
     color: #1f2937;
     font-size: 2rem;
@@ -41,7 +52,7 @@ body {
     line-height: 1.5;
 }
 
-/* Gaya Area Drop Zone (Upload) */
+/* AREA DROP ZONE UPLOAD */
 .drop-zone {
     border: 2px dashed #6366f1;
     border-radius: 12px;
@@ -72,9 +83,7 @@ body {
     text-decoration: underline;
 }
 
-/* ==========================================
-   FITUR BARU: GAYA INFORMASI FILE & PRATINJAU 
-   ========================================== */
+/* PRATINJAU FILE INFO */
 .file-info {
     margin-top: 20px;
     padding: 15px;
@@ -116,7 +125,6 @@ body {
     text-overflow: ellipsis;
 }
 
-/* Gaya Tombol Hapus File (Clear) */
 .btn-clear {
     background: none;
     border: none;
@@ -135,7 +143,7 @@ body {
     text-decoration: underline;
 }
 
-/* Gaya Tombol Aksi */
+/* TOMBOL AKSI */
 .action-section {
     margin-top: 30px;
 }
@@ -162,7 +170,6 @@ body {
     background-color: #4f46e5;
 }
 
-/* Gaya saat tombol mati (sebelum upload file) */
 .btn-primary:disabled {
     background-color: #d1d5db;
     color: #9ca3af;
@@ -179,77 +186,6 @@ body {
     background-color: #059669;
 }
 
-/* Gaya Artikel SEO */
-.seo-article {
-    margin-top: 40px;
-    text-align: left;
-    border-top: 2px solid #f3f4f6;
-    padding-top: 20px;
-}
-
-.seo-article h2 {
-    font-size: 1.3rem;
-    color: #1f2937;
-    margin-bottom: 15px;
-}
-
-.seo-article h3 {
-    font-size: 1.1rem;
-    color: #374151;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.seo-article p {
-    font-size: 0.85rem;
-    color: #4b5563;
-    line-height: 1.6;
-    margin-bottom: 12px;
-}
-
-.seo-article ul, .seo-article ol {
-    margin-left: 20px;
-    margin-bottom: 15px;
-    font-size: 0.85rem;
-    color: #4b5563;
-}
-
-.seo-article li {
-    margin-bottom: 8px;
-    line-height: 1.5;
-}
-
-.faq-item {
-    background: #f9fafb;
-    padding: 12px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.faq-item h4 {
-    font-size: 0.85rem;
-    color: #1f2937;
-    margin-bottom: 5px;
-}
-
-/* Gaya Link Footer Legalitas */
-.footer-links {
-    margin-top: 25px;
-    font-size: 0.85rem;
-}
-
-.footer-links a {
-    color: #6366f1;
-    text-decoration: none;
-    margin: 0 5px;
-    font-weight: 500;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-/* Gaya Footer Bawaan */
 .converter-footer {
     margin-top: 35px;
     border-top: 1px solid #f3f4f6;
@@ -259,4 +195,112 @@ body {
 .converter-footer p {
     font-size: 0.75rem;
     color: #9ca3af;
+}
+
+/* ==========================================
+   4. WADAH ARTIKEL SEO & FAQ (KOLOM KANAN)
+   ========================================== */
+.article-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.seo-article {
+    text-align: left;
+}
+
+.seo-article h2 {
+    font-size: 1.4rem;
+    color: #1f2937;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.seo-article h3 {
+    font-size: 1.15rem;
+    color: #374151;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.seo-article p {
+    font-size: 0.9rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.seo-article ul, .seo-article ol {
+    margin-left: 20px;
+    margin-bottom: 18px;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.seo-article li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* BLOK PERTANYAAN FAQ */
+.faq-item {
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border-left: 3px solid #10b981; /* Variasi warna hijau estetik untuk penanda FAQ */
+}
+
+.faq-item h4 {
+    font-size: 0.9rem;
+    color: #1f2937;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.faq-item p {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+}
+
+/* LINK FOOTER LEGALITAS */
+.footer-links {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f3f4f6;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #6366f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   5. RESPONSIVE DESIGN (UNTUK HP & TABLET)
+   ========================================== */
+@media (max-width: 992px) {
+    body {
+        padding: 20px 15px;
+    }
+    
+    .main-wrapper {
+        grid-template-columns: 1fr; /* Layout berubah menjadi satu kolom bertumpuk di HP */
+        gap: 30px;
+        max-width: 550px; /* Batasi lebar maksimal di layar kecil agar tetap presisi */
+    }
+    
+    .article-container {
+        padding: 30px 20px;
+    }
 }
